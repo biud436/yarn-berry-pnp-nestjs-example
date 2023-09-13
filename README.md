@@ -64,7 +64,7 @@ yarn plugin import typescript
 docker system prune -a -f
 ```
 
-## 참고
+## 주의 사항
 
 주의할 점은 현재 샘플은 규모가 매우 작아서 별 문제가 없습니다.
 
@@ -74,4 +74,8 @@ docker system prune -a -f
 
 해결이 되지 않으면 도입이 어려울 수 있습니다.
 
-> 실무 프로젝트에 적용해본 결과, ts-loader, webpack 등 일부 패키지는 동작하지 않았습니다.
+실무 프로젝트에 적용해본 결과, webpack 등 일부 패키지는 동작하지 않았습니다.
+
+따라서, yarn add webpack으로 재설치해야 했습니다.
+
+이외에도 수 많은 패키지를 찾을 수 없다는 에러가 발생했습니다.
