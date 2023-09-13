@@ -64,18 +64,16 @@ yarn plugin import typescript
 docker system prune -a -f
 ```
 
-## 주의 사항
+## 유령 의존성 관련 주의 사항
 
-주의할 점은 현재 샘플은 규모가 매우 작아서 별 문제가 없습니다.
+주의할 점은 현재 샘플은 규모가 매우 작아서 별 문제가 없었습니다.
 
-하지만 여러 글에 의하면 일부 패키지는 읽을 수 없는 현상이 있습니다.
+하지만 기존 프로젝트는 유령 의존성 문제로 인해 매우 많은 오류가 생기고 있고,
 
-이땐 `nodeLinker`를 활성화하거나, 패키지를 포기해야 할 수 있습니다.
+많은 패키지를 재설치하므로 며칠이 걸릴 수 있습니다.
 
-해결이 되지 않으면 도입이 어려울 수 있습니다.
+[https://yarnpkg.com/features/pnp#when-migrating-an-existing-project](https://yarnpkg.com/features/pnp#when-migrating-an-existing-project)
 
-실무 프로젝트에 적용해본 결과, webpack 등 일부 패키지는 동작하지 않았습니다.
+이러한 내용은 공식 문서에서도 나와있습니다.
 
-따라서, yarn add webpack으로 재설치해야 했습니다.
-
-이외에도 수 많은 패키지를 찾을 수 없다는 에러가 발생했습니다.
+기존 실무 프로젝트들을 마이그레이션 하던 도중에 이러한 문제가 발생하여 Yarn PnP 적용은 보류하게 되었습니다.
