@@ -73,3 +73,5 @@ docker system prune -a -f
 이땐 `nodeLinker`를 활성화하거나, 패키지를 포기해야 할 수 있습니다.
 
 해결이 되지 않으면 도입이 어려울 수 있습니다.
+
+> 실무 프로젝트에 적용해본 결과, ts-loader, webpack 등 일부 패키지는 동작하지 않았습니다.
