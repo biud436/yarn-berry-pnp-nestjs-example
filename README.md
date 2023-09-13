@@ -8,7 +8,8 @@
 
 ## 사용법
 
-리눅스 환경을 가정하고 있는데, Windows나 MacOS라면 먼저 docker image를 빌드해야 합니다.
+리눅스 환경을 가정하고 있는데, Windows나 MacOS라면 도커 데스크탑을 설치해야 할 수 있습니다.
+도커가 준비가 되었다면 다음 명령으로 이미지를 빌드합니다.
 
 ```sh
 docker build -t test-container .
