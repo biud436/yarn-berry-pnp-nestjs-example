@@ -75,5 +75,3 @@ docker system prune -a -f
 [https://yarnpkg.com/features/pnp#when-migrating-an-existing-project](https://yarnpkg.com/features/pnp#when-migrating-an-existing-project)
 
 이러한 내용은 공식 문서에서도 나와있습니다.
-
-기존 실무 프로젝트들을 마이그레이션 하던 도중에 이러한 문제가 발생하여 Yarn PnP 적용은 보류하게 되었습니다.
