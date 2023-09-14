@@ -64,14 +64,8 @@ yarn plugin import typescript
 docker system prune -a -f
 ```
 
-## 유령 의존성 관련 주의 사항
+## 주의 사항
 
-주의할 점은 현재 샘플은 규모가 매우 작아서 별 문제가 없었습니다.
+본 저장소는 webpack으로 번들링하는 프로젝트를 기준으로 작성되었습니다.
 
-하지만 기존 프로젝트는 유령 의존성 문제로 인해 매우 많은 오류가 생기고 있고,
-
-많은 패키지를 재설치하므로 며칠이 걸릴 수 있습니다.
-
-[https://yarnpkg.com/features/pnp#when-migrating-an-existing-project](https://yarnpkg.com/features/pnp#when-migrating-an-existing-project)
-
-이러한 내용은 공식 문서에서도 나와있습니다.
+Yarn PnP + Zero Install을 사용하기 위해서 webpack.config.js 파일을 직접 구성해야 했습니다.
