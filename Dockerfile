@@ -9,6 +9,9 @@ WORKDIR /usr/src/app
 
 COPY . .
 
+# .yarn/unplugged에 있는 파일들을 설치하기 위한 코드
+RUN yarn install
+
 RUN yarn build
 
 FROM node:16.18-alpine
